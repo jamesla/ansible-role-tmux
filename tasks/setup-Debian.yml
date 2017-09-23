@@ -15,7 +15,7 @@
 
 - name: Download tmux source.
   git:
-    source: http://github.com/tmux/tmux.git
+    repo: http://github.com/tmux/tmux.git
     dest: /tmp/tmux
 
 - name: Install Tmux.
