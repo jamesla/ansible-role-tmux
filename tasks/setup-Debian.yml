@@ -13,6 +13,7 @@
     - libevent-2.0-5
     - libncurses5
     - build-essential
+    - automake
     - git
 
 - name: Download tmux source.
