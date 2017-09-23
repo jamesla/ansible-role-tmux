@@ -10,7 +10,7 @@
     name: "{{ item }}"
     state: present
   with_items:
-    - libevent
+    - libevent-dev
     - ncurses
 
 - name: Download tmux source.
