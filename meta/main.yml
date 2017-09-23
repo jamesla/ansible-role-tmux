@@ -1,0 +1,21 @@
+---
+dependencies: []
+
+galaxy_info:
+  author: jamesla
+  description: Build tmux from source for ubuntu/debian.
+  company: "jamesla"
+  license: "license (BSD, MIT)"
+  min_ansible_version: 2.0
+  platforms:
+  - name: Debian
+    versions:
+    - jessie
+  - name: Ubuntu
+    versions:
+    - trusty
+    - xenial
+  galaxy_tags:
+    - tmux
+    - shell
+    - terminal

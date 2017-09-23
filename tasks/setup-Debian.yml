@@ -1,0 +1,24 @@
+---
+
+- name: Ensure apt version of tmux is not installed.
+  apt:
+    name: tmux
+    state: absent
+
+- name: Ensure dependencies are installed.
+  apt:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - libevent
+    - ncurses
+
+- name: Download tmux source.
+  git:
+    source: http://github.com/tmux/tmux.git
+    dest: /tmp/tmux
+
+- name: Install Tmux.
+  shell: cd /tmp/tmux && sh autogen.sh && ./configure && make
+  args:
+    creates: /usr/bin/tmux
