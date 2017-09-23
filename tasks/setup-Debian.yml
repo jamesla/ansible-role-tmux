@@ -27,7 +27,7 @@
   args:
     creates: /usr/bin/tmux
 
-- shell: which tmux
+- shell: ls -la /tmp/tmux
   register: result
 
 - debug:
