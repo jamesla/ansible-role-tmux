@@ -12,6 +12,7 @@
   with_items:
     - libevent-2.0-5
     - libncurses5
+    - git
 
 - name: Download tmux source.
   git:
