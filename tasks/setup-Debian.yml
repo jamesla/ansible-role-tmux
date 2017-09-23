@@ -8,12 +8,12 @@
 - name: Ensure dependencies are installed.
   apt:
     name:
-    - libevent-dev
-    - libncurses5-dev
-    - build-essential
-    - automake
-    - pkg-config
-    - git
+      - libevent-dev
+      - libncurses5-dev
+      - build-essential
+      - automake
+      - pkg-config
+      - git
 
 - name: Download tmux source.
   git:
