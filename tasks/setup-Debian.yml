@@ -26,3 +26,9 @@
   shell: cd /tmp/tmux && sh autogen.sh && ./configure && make
   args:
     creates: /usr/bin/tmux
+
+- shell: which tmux
+  register: result
+
+- debug:
+    var: result
