@@ -14,6 +14,7 @@
     - libncurses5
     - build-essential
     - automake
+    - pkg-config
     - git
 
 - name: Download tmux source.
