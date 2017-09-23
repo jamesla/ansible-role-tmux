@@ -2,7 +2,6 @@
 services: docker
 
 env:
-  - distro: ubuntu1704
   - distro: ubuntu1604
   - distro: ubuntu1404
   - distro: debian9
