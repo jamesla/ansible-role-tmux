@@ -21,6 +21,7 @@
     dest: /tmp/tmux
 
 - name: Install Tmux.
+  become: true
   shell: cd /tmp/tmux && sh autogen.sh && ./configure && make && cp tmux /usr/bin/tmux
   args:
     creates: /usr/bin/tmux
