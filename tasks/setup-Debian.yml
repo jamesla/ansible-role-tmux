@@ -19,6 +19,7 @@
   git:
     repo: http://github.com/tmux/tmux.git
     dest: /tmp/tmux
+    version: 2.9a
 
 - name: Install Tmux.
   become: true
